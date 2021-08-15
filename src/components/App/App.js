@@ -8,10 +8,11 @@ class App extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>My first React app</h1>
         <h2 className={styles.subtitle}>Hello World!</h2>
-        <img className={styles.image} src="http://uploads.kodilla.com/bootcamp/fer/11.react/space.png"></img>
-        <List title={['Things to do ', <sup key='1'>soon!</sup>]}>
-          <img className={'src="http://uploads.kodilla.com/bootcamp/fer/11.react/space.png"'}></img>   
-        </List>
+        <List 
+          title={['Things to do ', <sup key='1'>soon!</sup>]}
+          
+          img='http://uploads.kodilla.com/bootcamp/fer/11.react/space.png'>
+        </List>  
       </main>  
     )
   }
