@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Column.scss';
+import PropTypes from 'prop-types';
 
 
 class Column extends React.Component {
@@ -7,10 +8,11 @@ class Column extends React.Component {
         return (
 
             <section className={styles.component}>
-                <h3 className={styles.title}>Things I want to check out</h3>
-                    <columns className={styles.columns} titleText={this.props.title} />
-                    <columns className={styles.columns} titleText={this.props.title} />
-                    <columns className={styles.columns} titleText={this.props.title} />
+                <h3 className={styles.title}>
+                    <column className={styles.title} titleText={this.props.title} />
+                    <column className={styles.title} titleText={this.props.title} />
+                    <column className={styles.title} titleText={this.props.title} />
+                </h3>
             </section>     
         )            
     }

@@ -4,6 +4,7 @@ import Hero from '../Hero/Hero';
 import PropTypes from 'prop-types';
 import Column from '../Column/Column';
 
+
 class List extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
